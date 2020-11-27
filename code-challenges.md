@@ -8,7 +8,7 @@
 - With destructuring, you can separate values/properties into distinct variables from arrays/objects.
 
 **Rest**
-- The rest parameter, [. . .restParameter] allows you to represent an indefinite number of arguments as an array. It can only be the last parameter in a function.  
+- The rest parameter, `[. . .restParameter]` allows you to represent an indefinite number of arguments as an array. It can only be the last parameter in a function.  
 
 **Spread**
 - Spread allows for an array or string to be expanded in the place of arguments or other elements. It looks the same as rest syntax but expands rather than condenses elements.
