@@ -5,7 +5,7 @@
 - There can only be one constructor method in a class. Static methods are used to create or clone objects, and require the ‘static’ keyword. Classes can inherit from other classes using the keyword ‘extends.’
 
 **Destructuring**
--With destructuring, you can separate values/properties into distinct variables from arrays/objects.
+- With destructuring, you can separate values/properties into distinct variables from arrays/objects.
 
 **Rest**
 - The rest parameter, [. . .restParameter] allows you to represent an indefinite number of arguments as an array. It can only be the last parameter in a function.  
