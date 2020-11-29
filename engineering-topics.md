@@ -24,3 +24,28 @@
 - In order to have clean code, it has to be kept clean from the beginning. Ideally, the code will only get better over time, not get so complicated and convoluted that you're not even sure how to move forward. 
 
 
+[**TDD: Red, Green, Refactor**](https://www.codecademy.com/articles/tdd-red-green-refactor)
+
+- *Test-Driven Development* (TDD) - An approach where you write tests first, then use those tests to drive the development of your app. 
+
+- *Red, Green, Refactor* - a TDD framework used to build a test suite, write implementation code, and optimize the codebase in short development cycles. 
+    - **Red**
+        - Define *what* you want to implement
+        - Write minimal implementation code
+        - Run the test, take note of the error message
+    - **Green**
+        - Think about *how* to make the tests pass
+        - Find a solution, without worrying about optimizing your implementation 
+    - **Refactor**
+        - Think about *how* to improve the existing implementation
+            - How to accomplish the same output with more descriptive or faster code
+        - Consider the characteristics of a good test suite:
+            - MC-FIRE
+                - Maintainable
+                - Complete
+                - Fast
+                - Isolated 
+                - Reliable
+                - Expressive
+
+
