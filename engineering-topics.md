@@ -49,3 +49,41 @@
                 - Expressive
 
 
+[**The Cycles of TDD**](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html)
+
+- TDD is more than just testing first. 
+    - Ideally you would take it line by line -- write one line of a failing test and then write the corresponding line of code to make it pass.
+
+- **Second-by-Second** (nano-cycle)
+    - The Three Laws of TDD:
+        1. You must write a failing test before you write any production code. 
+        2. You must not write more of a test than is sufficient to fail, or fail to compile. 
+        3. You must not write more production code than is sufficient to make the currently failing test pass.
+    - Happens on almost a second-by-second basis
+
+- **Minute-by-Minute** (micro-cycle)
+    - Red-Green-Refactor
+        1. Create minimal implementation code that fails
+        2. Write production code to make that test pass
+        3. Clean it up
+    - Typically executed once for every complete test
+    - Instead of focusing on two things at once, this allows you to focus first on making it work, then once it does, giving it a long-term survivable structure.
+    - Refactoring should not be saved until the end of the project, or even the end of the day. It's not to be seen as optional. It's a continuous activity that is to be done on a minute-by-minute basis. 
+    - *"Make it work. Make it right. Make it fast"*
+
+- **Decaminute-by-Decaminute** (milli-cycle)
+    - Specific / Generic
+        - As tests get more specific, the code gets more generic. *Programmers make specific cases work by writing code that makes the general case work.*
+        - Your production code is getting more general if you can think of unwritten tests that would pass anyway. 
+            - If you make changes that would make one test pass, but not other unwritten tests pass, it's probably getting too specific. 
+    - The *Red-Green-Refactor* cycle can lead to too much specificity -- a lack of focus on the "big picture."
+         - This can result in getting stuck:
+            - Having to write a bunch of code outside the nano-cycle just to get the tests to pass.
+            - It forces you out of the TDD process.
+            - Solution: backtrack and add specificity to tests more slowly while adding generality to the production code more quickly
+    - To avoid getting stuck, evaluate every few minutes.
+
+- **Hour-by-Hour** (Primary Cycle)
+    - Boundaries
+        - Ensures that all other cycles are driving towards a *Clean Architecture.* 
+        - Every hour or so, look at the overall system and check to see whether significant architectural boundaries have been crossed. These can be hard to see at the smaller levels. 
